@@ -1,10 +1,8 @@
 
 require.config({
 	paths: {
-		"jquery": "vendor/jquery",
-		"foundation": "vendor/foundation",
-		"angular": "vendor/angular",
-		"angular-routes": "vendor/angular-routes"
+		"angular": "vendor/angular/angular",
+		"angular-routes": "vendor/angular/angular-routes"
 	},
 	shim: {
 		"angular-routes": {
@@ -12,26 +10,10 @@ require.config({
 		},
 		"angular": {
 			exports: "angular"
-		},
-		"foundation": {
-			deps: ["jquery"]
 		}
-		
 	}
 });
 
-/*
-require(["jquery", "foundation"], function() {
-	console.log("initializing...");
-	$(document).ready(function() {
-		console.log("Load Foundation...");
-		$(document).foundation();
-		console.log("Foundation loaded");
-	});
-
-	
-});
-*/
 require(["angular"], function(angular) {
 
 	var myApp = angular.module('myApp', []);
