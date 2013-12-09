@@ -18,8 +18,13 @@ If you don't have, this may help you:
   
 First of all we need to explain the folder structure.  
   
+*Michi, you really should explain more ;)*
+  
   
   
 ### TODO  
   
 - [ ] add test cases for AngularJS  
+- [ ] use sass classes from foundation
+- [ ] use grunt to compile sass, build and minify main.css
+- [ ] use grunt to concatenate and minify js files
