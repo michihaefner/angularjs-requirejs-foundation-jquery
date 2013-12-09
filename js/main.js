@@ -1,41 +1,34 @@
 
-
-
 require.config({
+	baseUrl: "./js/",
 	paths: {
 		"jquery": "vendor/jquery1.10.2",
-		"jquery-private": "vendor/jquery-private",
 		"angular": "vendor/angular/angular",
-		"angular-routes": "vendor/angular/angular-routes",
-		"test-plugin": "vendor/test-plugin",
-		"foundation-base": "vendor/foundation/foundation",
-		"foundation": "vendor/foundation-private"
+		"angular-route": "vendor/angular/angular-route",
+		"foundation-base": "vendor/foundation",
+		"foundation": "vendor/foundation.loadPlugins", // loads jQuery, FoundationJS and FoundationPlugins
+		"app": "angular-app/app"
 	},
 	shim: {
-		/*
 		"angular-routes": {
 			deps: ["angular"]
 		},
-		*/
 		"angular": {
+			deps: ["foundation"],
 			exports: "angular"
 		},
 		"jquery": {
 			exports: "jQuery"
+		},
+		"foundation-base": {
+			exports: "Foundation"
 		}
 	}
 });
 
 
 
-require(["jquery", "foundation", "angular"], function($, foundation, angular) {
-	$(document).ready(function() {
-		var myApp = angular.module('myApp', []);
-
-		myApp.controller('MainCtrl', ['$scope', function ($scope) {
-			// Controller magic
-			$scope.text = 'Hello, Angular fanatic.';
-		}]);
-	});
-	
+require(["app"], function() {
+	console.log(Foundation);
+	console.log(angular);
 });

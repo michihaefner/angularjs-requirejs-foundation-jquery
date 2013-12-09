@@ -1,3 +1,6 @@
+
+define(["jquery", "foundation-base"], function(jQuery, Foundation) {
+
 ;(function ($, window, document, undefined) {
   'use strict';
 
@@ -432,3 +435,5 @@
 
     
 }(jQuery, this, this.document));
+
+});

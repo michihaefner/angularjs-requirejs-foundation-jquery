@@ -418,5 +418,5 @@ define(["jquery"], function($) {
 
 }($, this, this.document));
 
-  return $.fn.foundation;
+  return Foundation;
 });

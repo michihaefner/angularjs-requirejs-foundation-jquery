@@ -1,3 +1,5 @@
+define(["jquery", "foundation-base"], function(jQuery, Foundation) {
+
 /*jslint unparam: true, browser: true, indent: 2 */
 ;(function ($, window, document, undefined) {
   'use strict';
@@ -35,3 +37,5 @@
     reflow : function () {}
   };
 }(jQuery, this, this.document));
+
+});
