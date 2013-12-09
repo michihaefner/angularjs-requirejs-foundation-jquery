@@ -3,6 +3,8 @@
  * (c) 2010-2014 Google, Inc. http://angularjs.org
  * License: MIT
  */
+define(["angular"], function(angular) {
+
 (function(window, angular, undefined) {'use strict';
 
 /**
@@ -889,3 +891,5 @@ function ngViewFactory(   $route,   $anchorScroll,   $compile,   $controller,   
 
 
 })(window, window.angular);
+
+});

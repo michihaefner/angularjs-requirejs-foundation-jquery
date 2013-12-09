@@ -1,3 +1,5 @@
+define(["jquery"], function(jQuery) {
+
 ;(function ($, window, document, undefined) {
   'use strict';
 
@@ -182,3 +184,5 @@
     reflow : function () {}
   };
 }(jQuery, this, this.document));
+
+});
