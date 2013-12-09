@@ -9,8 +9,8 @@ It only shows, how you can get AngularJS working together with RequireJS, ZURB F
 To understand how all works together, you need to have basic unterstanding of AngularJS and RequireJS. 
 If you don't have, this may help you:  
   
-[AngularJS "AngularJS Developer Guide"](http://docs.angularjs.org/guide)  
-[RequireJS "RequireJS API Documentation"](http://requirejs.org/docs/api.html)  
+[AngularJS](http://docs.angularjs.org/guide "AngularJS Developer Guide")  
+[RequireJS](http://requirejs.org/docs/api.html "RequireJS API Documentation")  
   
   
   
@@ -22,4 +22,4 @@ First of all we need to explain the folder structure.
   
 # TODO  
   
--[] add test cases for AngularJS  
+- [ ] add test cases for AngularJS  
