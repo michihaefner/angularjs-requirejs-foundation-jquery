@@ -3,5 +3,5 @@
  * Be sure to require the directive module in every directive.
  */
 define([
-    './example.directive'
+    'app/js/angular-app/directives/example.directive'
 ], function () {});

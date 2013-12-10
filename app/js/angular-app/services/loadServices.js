@@ -3,5 +3,5 @@
  * Be sure to require the service module in every service.
  */
 define([
-    './example.service'
+    'app/js/angular-app/services/example.service'
 ], function () {});

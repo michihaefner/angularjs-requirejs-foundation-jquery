@@ -1,9 +1,9 @@
 define(
 	[
 	"jquery", 
-	"../js/vendor/foundation/foundation.topbar",
-	"../js/vendor/foundation/foundation.dropdown",
-	"../js/vendor/foundation/foundation.alert"
+	"app/js/vendor/foundation/foundation.topbar",
+	"app/js/vendor/foundation/foundation.dropdown",
+	"app/js/vendor/foundation/foundation.alert"
 	], 
 	function($, foundation) {
 	
