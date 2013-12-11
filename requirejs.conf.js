@@ -1,6 +1,4 @@
-
 require.config({
-	baseUrl: "../",
 	paths: {
 		"jquery": "app/js/vendor/jquery1.10.2",
 		"angular": "app/js/vendor/angular/angular",
@@ -8,14 +6,14 @@ require.config({
 		"foundation-base": "app/js/vendor/foundation",
 		"foundation": "app/js/vendor/foundation.loadPlugins", // loads jQuery, FoundationJS and FoundationPlugins
 		//Angular Application
-		"ngApp": "app/js/angular-app/app",
+		"myApp": "app/js/angular-app/app",
 		"loadControllers": "app/js/angular-app/controllers/loadControllers",
 		"loadDirectives": "app/js/angular-app/directives/loadDirectives",
 		"loadFilters": "app/js/angular-app/filters/loadFilters",
 		"loadServices": "app/js/angular-app/services/loadServices"
 	},
 	shim: {
-		"angular-route": {
+		"angular-routes": {
 			deps: ["angular"]
 		},
 		"angular": {
@@ -28,9 +26,5 @@ require.config({
 		"foundation-base": {
 			exports: "Foundation"
 		}
-
 	}
 });
-
-
-require(["ngApp"], function() {});

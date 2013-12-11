@@ -1,4 +1,4 @@
-define([
+require([
     'jquery',
     'angular',
     'angular-route',
@@ -8,7 +8,7 @@ define([
     'loadServices'
 ], function ($, angular) {
     'use strict';
-
+    console.log("loading App...");
     $(document).ready(function() {
         angular.module('ngApp', [
             'ngApp.controllers',
@@ -17,6 +17,7 @@ define([
             'ngApp.services',
             'ngRoute'
         ]);
+        angular.bootstrap(document, ['ngApp']);
         console.log("App loaded");
     });
     
