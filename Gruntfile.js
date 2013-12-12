@@ -31,15 +31,30 @@ module.exports = function(grunt) {
           }
         }
       }
+    },
+
+    // Compile from Sass to CSS
+    sass: {                              // Task
+      dist: {                            // Target
+        options: {                       // Target options
+          style: 'expanded'
+        },
+        files: {                         // Dictionary of files
+          'app/css/foundation.css': 'app/scss/foundation.scss',       // 'destination': 'source'
+          'app/css/normalize.css': 'app/scss/normalize.scss'
+        }
+      }
     }
+
   });
 
   // Load plugins
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
 
   // Default task(s).
-  grunt.registerTask('default', ['requirejs']);
+  grunt.registerTask('default', ['requirejs', 'sass']);
 
 };
